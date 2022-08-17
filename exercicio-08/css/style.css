@@ -16,10 +16,13 @@ h1 {
   height: 400px;
   background-image: url('../img/matrix.webp');
   background-size: cover;
+  background-position: center;
 }
 
 .review-score {
   color: white;
+  background: #e6bd09;
+  padding: 12px;
 }
 
 p {
