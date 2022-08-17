@@ -1,0 +1,37 @@
+:root {
+  --josefin: 'Josefin Sans', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+}
+
+body {
+  background: #131313;
+}
+
+h1 {
+  color: white;
+  font-family: var(--josefin);
+}
+
+.media-picture {
+  height: 400px;
+  background-image: url('../img/matrix.webp');
+  background-size: cover;
+}
+
+.review-score {
+  color: white;
+}
+
+p {
+  color: #bdbdbd;
+  font-family: var(--roboto);
+}
+
+h2 {
+  color: steelblue;
+  font-family: var(--josefin);
+}
+
+a {
+  color: yellow;
+}
