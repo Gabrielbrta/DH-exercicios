@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-fixed {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  width: 100%;
+}
+
+.header-fixed .offer {
+  background: #1CD1B0;
+  font-size: 15px;
+  padding: 10px;
+} 
+
+.header-fixed div:last-child {
+  background: #00669F;
+  font-size: 32px;
+  padding: 28px 26px;
+}
+
+main section.card-container {
+  width: 834px;
+  height: 100vh;
+  margin: 150px auto;
+}
+
+.bg-hero {
+  position: relative;
+  width: 374px;
+  height: 217px;
+  background-image: url('../img/bg-batman.png');
+  z-index: 1;
+}
+
+.bg-hero.arlequina {
+  background-image: url('../img/bg-arlequina.png');
+}
+
+.hero-img {
+  border-radius: 50%;
+  position: absolute;
+  bottom: -25%;
+  right: 32%;
+}
+
+.card-container .card:first-child {
+  margin-right: 50px;
+}
+
+.card {
+  display: inline-block;
+  background: #F3F3F3;
+  max-width: 375px;
+  box-shadow: 0px 2px 2px #c1c1c1;
+}
+
+.card.arlequina .text-card h2 {
+  margin-top: 90px;
+}
+
+.text-card {
+  margin: 50px auto;
+  width: 300px;
+  text-align: center;
+}
+
+.text-card h2 {
+  margin: 70px 0 30px 0;
+  font-weight: 500;
+}
+
+.text-card button {
+  margin: 23px 0 20px 0;
+  background: #00669F;
+  color: #F3F3F3;
+  border: none;
+  padding: 17px 40px;
+  cursor: pointer;
+}
+
+.icon-heart {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+footer {
+  color: #FFF9F9;
+  background: #00669F;
+  padding: 16px 28px;
+}
