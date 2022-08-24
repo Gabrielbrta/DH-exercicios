@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #F3F3F3;
+}
+
+.header {
+  background: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  list-style: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #39B24A;
+}
+
+.logo h1 span:first-child {
+  color: white;
+}
+.logo h1 span:last-child {
+  color: #FC200C;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header nav ul li + li {
+  margin-left: 13px;
+}
+
+.header nav ul li a {
+  color: #f3f3f3;
+  display: inline-block;
+  padding: 10px;
+  transition: .3s;
+}
+
+.header nav ul li a:hover {
+  color: red;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 986px;
+  margin: 35px auto;
+}
+
+.delivery-container {
+  height: 350px;
+  width: 490px;
+  text-align: center;
+  color: red;
+  background-image: url('../img/delivery.jpg');
+}
+
+.delivery-container span {
+  color: white;
+}
+
+.cardapio-container {
+  width: 491px;
+  text-align: center;
+  margin: 0 auto;
+  height: 350px;
+  background: #FFFFFF;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.cardapio-container h2 {
+  margin: 26px 0px 80px 0px;
+  color: red;
+}
+
+.cardapio-container h3 {
+  margin: 0 0 20px 20px;
+}
+.cardapio-container .content {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  list-style-position: inside;
+}
+
+.list {
+  text-align: left;
+  font-weight: bold;
+}
+
+.list ol li {
+  margin: 10px 0;
+}
+.footer {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  background: #222222;
+}
+
+.footer nav.footer-list {
+  order: -1;
+  
+}
+
+.footer nav.footer-list ul {
+  list-style: none;
+  text-decoration: none;
+}
+.footer nav.footer-list ul li a {
+  color: #F3F3F3;
+  margin-bottom: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.logo.footer-logo {
+  font-size: 15px;
+}
