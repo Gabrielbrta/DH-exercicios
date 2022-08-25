@@ -5,8 +5,145 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Front Cat&Dog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  
+  <div class="offer-container">
+    <div>
+      Grandes ofertas em comedouros
+    </div>
+    <div class="select">
+      <a href="#"><span>Português <img src="./img/arrow-down.svg" alt="setinha para baixo"></span></a>
+      <a href="#"><span>BRL$ <img src="./img/arrow-down.svg" alt="setinha para baixo"></span></a>
+    </div>
+  </div>
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="./img/Dog-icon.svg" alt="dog icon">
+       <a href="#"><h1>Front<span>Cat&Dog</span></h1></a>
+        <img src="./img/Cat-icon.svg" alt="cat icon">
+      </div>
+      <nav class="navigation">
+        <ul class="list">
+          <li>
+            <a href="#Categorias">
+              <img src="./img/pata-icon.svg" alt="icone de pata">
+              Categorías
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/pata-icon.svg" alt="icone de pata">
+              Pets
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/pata-icon.svg" alt="icone de pata">
+              Quem somos
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/pata-icon.svg" alt="icone de pata">
+              Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="home-container">
+      <div class="bg-text">
+        <p class="title">É um prazer te ter aqui!</p>
+        <div>
+          <p>Comedouros com desconto!</p>
+          <a class="btn-home" href="#">COMEDOUROS</a>
+        </div>
+      </div>
+    </section>
+    <section id="Categorias" class="products-container">
+      <header class="products-top">
+        <img src="./img/pata-grande.svg" alt="icone de uma pata">
+        <h2>Produtos Destacados</h2>
+        <span class="products-links">
+          <a href="#">Comedouros </a>  -
+          <a href="#">Acessórios </a>  -
+          <a href="#">Comida</a>
+        </span>
+      </header>
+      <div class="products-boxes">
+        <div class="product">
+          <img src="./img/churrasquito.png" alt="foto de petiscos de cachorro">
+          <p class="product-name">Petisco Churrasquito</p>
+          <span class="price">$150</span>
+        </div>
+        <div class="product">
+          <img src="./img/comedouro.png" alt="foto de um comedouro de cachorro">
+          <p class="product-name">Comedouro para cachorro</p>
+          <span class="price">$250</span>
+        </div>
+        <div class="product">
+          <img src="./img/ossinhos.png" alt="foto de ossinhos de cachorro">
+          <p class="product-name">Petisco Ossinho</p>
+          <span class="price">$650</span>
+        </div>
+      </div>
+    </section>
+    <section class="contacts-container">
+      <form class="contatos" action="contato">
+        <h2>Contato</h2>
+        <input placeholder="Nome e Sobrenome" type="text">
+        <input placeholder="Seu email" type="email">
+        <input placeholder="Telefone" type="tel">
+        <div class="form-button">
+          <button type="reset">Limpar</button>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+    <div class="newsletter-container">
+      <div>
+        <img src="./img/message-icon.svg" alt="icone de uma carta">
+        <p>Inscreva-se para mais novidades</p>
+      </div>
+      <form class="newsletter" action="newsletter">
+        <input placeholder="Informe seu email" type="email">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+  <footer class="footer-container">
+    <div class="footer-content">
+      <div class="footer-contact">
+        <div class="contact-box">
+          <img src="./img/locale-icon.svg" alt="locale icon">
+          <p class="title-contact">Localização</p>
+          <span>São Paulo</span>
+        </div>
+        <div class="contact-box">
+          <img src="./img/phone-icon.svg" alt="phone icon">
+          <p class="title-contact">Telefone</p>
+          <span>15-111-111-111</span>
+        </div>
+        <div class="contact-box">
+          <img src="./img/email-icon.svg" alt="locale icon">
+          <p class="title-contact">Email</p>
+          <span>Email</span>
+        </div>
+      </div>
+      <div class="footer-website">
+        <img src="./img/Dog-icon.svg" alt="icone de um cachorro">
+        <span>Front<span>Cat&Dog</span></span>
+        <img src="./img/Cat-icon.svg" alt="icone de um gato">
+      </div>
+    </div>
+    <div class="footer-copyright">Todos os direitos reservados a Front end I</div>
+  </footer>
 </body>
 </html>
