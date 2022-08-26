@@ -34,6 +34,10 @@ html {
   top: 0px;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .offer-container{
   display: flex;
   align-items: center;
@@ -116,7 +120,7 @@ html {
 }
 
 .bg-text p.title {
-
+  text-align: center;
   background: #f3f3f3;
   font-size: 1.875rem;
   border-radius: 5px;
@@ -245,6 +249,7 @@ form.contatos input::placeholder {
   width: 100%;
   padding: 10px 23px;
   display: flex;
+  flex-wrap: wrap;
   margin: 95px auto 0 auto;
   align-items: center;
   justify-content: space-between;
@@ -342,4 +347,40 @@ form.contatos input::placeholder {
   font-weight: bold;
   font-size: .625rem;
   padding: 4px 0px;
+}
+
+@media (max-width: 414px) {
+  /*header*/
+  .offer-container {
+    display: none;
+  }
+
+  .navigation .list {
+    display: none
+  }
+
+  .menu-mobile {
+    display: block;
+    background: none;
+    cursor: pointer;
+    border: none;
+  }
+
+  /*home container*/
+
+  .home-container p.comedouro {
+    display: none;
+  }
+
+  .home-container {
+    background-size: cover;
+    background-position: center left;
+  }
+
+  .bg-text {
+    text-align: right;
+    width: 90%;
+  }
+
+
 }
