@@ -3,7 +3,7 @@
   --primary-color: #F0A83E;
   --secondary-color: #3C2313;
   --grey: #8A8787;
-  --dark-grey:#222222;
+  --dark-grey: #222222;
 }
 
 * {
@@ -34,11 +34,15 @@ html {
   top: 0px;
 }
 
+<<<<<<< HEAD
 .menu-mobile {
   display: none;
 }
 
 .offer-container{
+=======
+.offer-container {
+>>>>>>> b36ac51fb6a94216ddb87c0ba912ed3524e69900
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,7 +53,7 @@ html {
 }
 
 .offer-container .select a {
-  color: #f3f3f3; 
+  color: #f3f3f3;
   display: inline-block;
   padding: 5px;
 }
@@ -83,9 +87,10 @@ html {
   align-items: center;
 }
 
-.navigation .list li + li {
+.navigation .list li+li {
   margin-left: 8px;
 }
+
 .navigation .list li a {
   display: inline-block;
   padding: 5px;
@@ -150,7 +155,7 @@ html {
   margin-bottom: 15px;
 }
 
-.products-links a{
+.products-links a {
   color: #666666;
   display: inline-block;
   padding: 5px;
@@ -167,6 +172,7 @@ html {
   flex: 1;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   max-width: 834px;
   margin: 49px auto 0px auto;
   font-size: .934rem;
@@ -192,7 +198,7 @@ html {
   align-items: center;
 }
 
-form.contatos h2{
+form.contatos h2 {
   color: var(--secondary-color);
   margin-bottom: 15px;
 }
@@ -212,13 +218,14 @@ form.contatos input::placeholder {
   color: #ffffff;
   font-size: 9px;
 }
+
 .form-button {
   margin-top: 49px;
 }
 
 .form-button button:first-child {
   background: var(--grey);
-  color:#f3f3f3;
+  color: #f3f3f3;
   border: none;
   border-radius: 15px;
   padding: 8px 30px;
@@ -227,7 +234,7 @@ form.contatos input::placeholder {
 .form-button button:last-child {
   background: var(--primary-color);
   padding: 8px 30px;
-  color:#f3f3f3;
+  color: #f3f3f3;
   border-radius: 15px;
   border: none;
 }
@@ -302,7 +309,7 @@ form.contatos input::placeholder {
   margin: 0 auto;
 }
 
-.contact-box  {
+.contact-box {
   display: flex;
   flex-direction: column;
   height: 66px;
@@ -311,7 +318,8 @@ form.contatos input::placeholder {
   margin: 20px 0px;
 }
 
-.contact-box p, .contact-box span {
+.contact-box p,
+.contact-box span {
   margin-left: 25px;
 }
 
@@ -321,7 +329,7 @@ form.contatos input::placeholder {
   font-size: 1.25rem;
 }
 
-.contact-box span  {
+.contact-box span {
   color: var(--grey);
   font-size: .625rem;
 }
@@ -335,7 +343,7 @@ form.contatos input::placeholder {
   font-size: 1.25rem;
 }
 
-.footer-website span span{
+.footer-website span span {
   color: var(--primary-color);
 }
 
@@ -347,6 +355,7 @@ form.contatos input::placeholder {
   font-weight: bold;
   font-size: .625rem;
   padding: 4px 0px;
+<<<<<<< HEAD
 }
 
 @media (max-width: 414px) {
@@ -384,3 +393,6 @@ form.contatos input::placeholder {
 
 
 }
+=======
+}
+>>>>>>> b36ac51fb6a94216ddb87c0ba912ed3524e69900
