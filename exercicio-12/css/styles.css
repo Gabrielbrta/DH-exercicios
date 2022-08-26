@@ -45,7 +45,7 @@ html {
   background: var(--dark-grey);
   width: 100%;
   padding: 0 90px;
-  color: #f3f3f3;
+  color: #f3f3F3;
 }
 
 .offer-container .select a {
