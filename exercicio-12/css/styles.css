@@ -356,6 +356,10 @@ form.contatos input::placeholder {
 
 @media (max-width: 414px) {
   /*header*/
+.header-container {
+  padding: 20px 12px;
+}
+
   .offer-container {
     display: none;
   }
@@ -375,6 +379,11 @@ form.contatos input::placeholder {
 
   .home-container p.comedouro {
     display: none;
+  }
+
+  .bg-text p.title {
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 
   .home-container {
