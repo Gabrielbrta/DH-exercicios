@@ -24,14 +24,22 @@ img {
 
 .header-fixed div:last-child {
   background: #00669F;
-  font-size: 32px;
-  padding: 28px 26px;
+  font-size: 24px;
+  padding: 12px 26px;
 }
 
-main section.card-container {
-  width: 834px;
-  height: 100vh;
-  margin: 150px auto;
+main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 850px;
 }
 
 .bg-hero {
@@ -58,9 +66,11 @@ main section.card-container {
 }
 
 .card {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   background: #F3F3F3;
   max-width: 375px;
+  margin: 20px 0;
   box-shadow: 0px 2px 2px #c1c1c1;
 }
 
@@ -98,4 +108,21 @@ footer {
   color: #FFF9F9;
   background: #00669F;
   padding: 16px 28px;
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    padding: 10px 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .card {
+    width: 90%;
+  }
+  
+  .bg-hero {
+    width: 100%;
+  }
 }
