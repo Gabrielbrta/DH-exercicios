@@ -1,0 +1,302 @@
+:root {
+  --roboto: "Roboto", sans-serif;
+  --primary-color: #D01418;
+  --socials-color: #D65AA3;
+  --black: #000;
+  --white: #FFF;
+  --border: #222222;
+  --bg-color: #f3f3f3;
+  --footer-color: #283238;
+  --send: #619D00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--roboto);
+}
+
+h2 {
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.562rem;
+  color: var(--bg-color);
+}
+
+.green {
+  color: var(--send);
+}
+
+.red {
+  color: var(--primary-color);
+}
+
+.header, .footer {
+  background: var(--border);
+  width: 100%;
+}
+
+.header {
+  padding: 20px 25px;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 955px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.562rem;
+  color: var(--white);
+}
+
+.logo p {
+  margin-left: 20px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation-list li a {
+  display: inline-block;
+  padding: 10px;
+  color: var(--bg-color);
+  transition: color .3s;
+}
+
+.navigation-list li a:hover {
+  color: var(--primary-color);
+}
+
+.navigation img.mobile {
+  display: none;
+}
+
+main {
+  background-color: var(--bg-color);
+}
+
+.banner {
+  width: 100%;
+  background-image: url('../img/bg-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h1 {
+  margin-bottom: 2%;
+  color: var(--bg-color);
+  font-size: 2.5rem;
+  line-height: 52px;
+  text-align: center;
+}
+
+.btn {
+  padding: 14px 59px;
+  background: var(--primary-color);
+  color: var(--bg-color);
+  border-radius: 5px;
+  font-size: 1.562rem;
+  font-weight: 500;
+  border: 2px solid var(--primary-color);
+  transition: .3s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--primary-color);
+}
+
+.products {
+  width: 100%;
+  margin: 40px 0;
+  padding: 30px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 875px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products .card {
+  width: 100%;
+  max-width: calc(33% - 15px);
+  min-width: 220px;
+  padding: 30px 0;
+  height: 322px;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s;
+}
+.products .card:hover {
+  transform: scale(1.04);
+}
+
+.products .card .bg-img {
+  flex-grow: 1;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.bg-img img {
+  padding-bottom: 30px;
+}
+
+.products .card .price {
+  margin: 20px;
+  font-weight: 500;
+}
+
+.price p:first-child {
+  font-size: 1.25rem;
+}
+
+.price p:nth-child(2) {
+  font-size: .812rem;
+}
+
+.price p:nth-child(3) {
+  font-size: .625rem;
+}
+
+.produtos-estrelas h2 {
+  margin: 30px;
+}
+
+.produtos-estrelas {
+  padding: 20px 0;
+  margin-bottom: 60px;
+}
+
+.category {
+  width: 100%;
+  background-image: url('../img/cadeira-banner.jpg');
+  min-height: 135px;
+  min-width: 260px;
+  background-size: 100%;
+  max-width: 360px;
+  display: flex;
+  text-align: center;
+  color: var(--bg-color);
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.category:hover{
+  background-size: 110%;
+}
+
+.category:hover h3 {
+  color: var(--primary-color);
+}
+
+.estrelas {
+  gap: 20px;
+
+}
+
+.category.computador {
+  background-image: url('../img/computador-banner.jpg');
+}
+
+.socials {
+  height: 216px;
+  align-items: center;
+}
+
+.social-links h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  width: 163px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links .links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+
+.copyright {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 10px;
+  background: #C4C4C4;
+  text-align: center;
+}
+
+@media(max-width: 414px) {
+  .navigation img.mobile {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navigation-list {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .products .card {
+    min-width: 100%;
+  }
+
+  .estrelas {
+    min-width: 100%;
+  }
+
+  .estrelas h3 {
+    font-size: 1rem;
+  }
+
+  .socials {
+    gap: 32px;
+    justify-content: center;
+  }
+}
