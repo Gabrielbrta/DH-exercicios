@@ -1,0 +1,137 @@
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background: variables.$black-color;
+  color: variables.$light-color;
+  padding: 20px;
+
+  @include variables.mobile (344px) {
+    flex-direction: column;
+  }
+  h1{
+    @include variables.mobile (344px) {
+      margin-bottom: 20px;
+    }
+    font-size: 30px;
+    &::first-letter{
+      color: variables.$primary-color;
+    }
+  }
+  
+  nav ul{
+    display: flex;
+    gap: 5px;
+  }
+  
+  ul li{
+    list-style-type: none;
+    @include variables.mobile (344px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  li a{
+    text-decoration: none;
+    color: variables.$light-color;
+    padding: 10px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+
+    @include variables.mobile(343px) {
+      padding: 5px;
+    }
+    &:hover {
+      background-color: variables.$primary-color;
+      color: variables.$black-color;
+    }
+  }
+}
+
+.rpg {
+    h2 {
+      text-align: center;
+      padding: 15px 0;
+    }
+    
+    .card-game h3 {
+      text-align: center;
+      padding: 15px 0;
+    }
+}
+
+main{
+  padding: 15px 60px;
+  @include variables.mobile(343px) {
+    padding: 15px 30px;
+  }
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  text-align: center;
+  
+  .card-game{
+    img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .image-container{
+      height: 350px;
+      width: 100%;
+      border: 10px groove lightgray;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    .btn{
+      padding: 10px 90px;
+      font-weight: bold;
+      border-radius: 9px;
+      border: none;
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: variables.$primary-color;
+        color: variables.$light-color;
+      }
+    }
+  }
+
+  @include variables.mobile(786px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include variables.mobile(785px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+#rpg + #rts{
+  margin-top: 60px;
+}
