@@ -1,0 +1,71 @@
+@use 'variables';
+@use 'mixin';
+
+.contacts-container {
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  form {
+     h2{
+      color: variables.$secondary-color;
+      margin-bottom: 15px;
+    }
+
+    input {
+      width: 100%;
+      background: variables.$secondary-color;
+      border: none;
+      font-size: 14px;
+      border-radius: 15px;
+      padding: 15px 14px;
+      margin: 5px 0;
+      color: #ffffff;
+      
+      @include mixin.mobile(414px) {
+        width: 80%;
+      }
+
+      &::placeholder {
+        font-size: 9px;
+        color: #ffffff;
+      }
+    }
+  }
+  .form-button {
+    margin-top: 49px;
+
+    @include mixin.mobile(414px) {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    button:first-child {
+      background: variables.$grey;
+      color: #f3f3f3;
+      border: none;
+      border-radius: 15px;
+      padding: 8px 30px;
+    }
+
+    button:last-child {
+      background: variables.$primary-color;
+      padding: 8px 30px;
+      color: #f3f3f3;
+      border-radius: 15px;
+      border: none;
+    }
+    button {
+      cursor: pointer;
+      font-size: 1rem;
+      @include mixin.mobile(414px) {
+        display: inline-block;
+        width: 48%;
+        padding: 14px 30px;
+      }
+    }
+  }
+}

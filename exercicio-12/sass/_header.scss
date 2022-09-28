@@ -1,0 +1,91 @@
+@use 'variables';
+@use 'mixin';
+
+
+.header {
+  position: sticky;
+  top: 0px;
+
+  .header-container {
+    width: 100%;
+    display: flex;
+    background: variables.$primary-color;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 40px;
+
+    @include mixin.mobile(414px) {
+      padding: 20px 12px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      a h1 {
+        color: variables.$secondary-color;
+        font-size: 1.25rem;
+
+        span {
+          color: #f3f3f3;
+        }
+      }
+    }
+
+    .navigation {
+      .list {
+        display: flex;
+        align-items: center;
+
+        li+li {
+          margin-left: 8px;
+        }
+
+        @include mixin.mobile(414px) {
+          display: none;
+        }
+
+        li a {
+          display: inline-block;
+          padding: 5px;
+          color: #f3f3f3;
+          transition: .3s;
+
+          &:hover {
+            color: variables.$secondary-color;
+          }
+        }
+      }
+
+      .menu-mobile {
+        display: none;
+        @include mixin.mobile(414px) {
+          display: block;
+          background: none;
+          cursor: pointer;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+
+.offer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: variables.$dark-grey;
+  width: 100%;
+  padding: 0 90px;
+  color: #f3f3F3;
+  @include mixin.mobile(414px) {
+    display: none;
+  }
+  .select a {
+    color: #f3f3f3;
+    display: inline-block;
+    padding: 5px;
+  }
+}

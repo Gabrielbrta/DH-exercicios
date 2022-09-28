@@ -1,0 +1,130 @@
+@use 'variables';
+@use 'mixin';
+
+.footer-container {
+  width: 100%;
+  background: variables.$secondary-color;
+}
+
+.newsletter-container {
+  background: variables.$primary-color;
+  width: 100%;
+  padding: 10px 23px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 95px auto 0 auto;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    align-items: center;
+    @include mixin.mobile(414px) {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-left: 10px;
+      color: #f3f3f3;
+      font-weight: bold;
+    }
+  }
+
+  form {
+    width: 346px;
+    display: flex;
+    @include mixin.mobile(414px) {
+      width: 90%;
+      flex-wrap: wrap;
+    }
+
+    input {
+      width: 271px;
+      padding: 15px 8px;
+      border-radius: 15px;
+      border: none;
+
+      @include mixin.mobile(414px) {
+        width: 70%;
+      }
+
+      &::placeholder {
+        font-size: 9px;
+        color: #a0a0a0;
+      }
+    }
+
+    button {
+      margin-left: 5px;
+      padding: 12px 22px;
+      border-radius: 15px;
+      background-color: variables.$secondary-color;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+
+  @include mixin.mobile(414px) {
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    height: 66px;
+    flex-wrap: wrap;
+    max-width: 199px;
+    margin: 20px 0px;
+
+    p, span {
+      margin-left: 25px;
+    }
+    span {
+      color: variables.$grey;
+      font-size: .625rem;
+    }
+    .title-contact {
+      color: #f3f3f3;
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+  }
+  .footer-website {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3f3f3;
+    font-weight: bold;
+    font-size: 1.25rem;
+    
+  @include mixin.mobile(414px) {
+    order: -1;
+    align-self: center;
+    margin-top: 10px;
+  }
+    span span {
+      color: variables.$primary-color;
+    }
+  }
+}
+
+.footer-copyright {
+  width: 100%;
+  background: variables.$dark-grey;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  font-size: .625rem;
+  padding: 4px 0px;
+}
