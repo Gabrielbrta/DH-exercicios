@@ -27,7 +27,7 @@ function microondas(opcao, tempo){
       console.log("Prato pronto, bom apetite!!!");
       break;
     default:
-      console.log('Opção Invalida') ;
+      console.log('Prato Inexistente');
   }
 }
 
