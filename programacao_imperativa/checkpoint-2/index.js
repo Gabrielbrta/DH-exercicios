@@ -1,6 +1,5 @@
 const alunosCurso = [];
 const nomes = ["Gabriel", "Marcos", "Marcia", "Monica"];
-
 /* 
 Crie uma função construtora ou Classe Aluno que tenha como atributos: nome (string), quantidade de faltas (number) e notas (array de números).  */
 class Aluno {
@@ -17,7 +16,7 @@ class Aluno {
     let notas = this.notas
     let media = 0;
     notas.forEach(nota => { 
-      (media += nota) / this.notas.lenght; 
+      (media += nota) / this.notas.length; 
       return media
     });
     return media;
@@ -92,6 +91,5 @@ function numAleatorio(numeroMax) {
   return (Math.random() * numeroMax).toFixed();
 }
 insereAlunos(nomes);
-// console.log(curso.estudantes[0]);
 console.log(curso.situacaoFinal(curso.estudantes[0]));
 console.log(curso.aprovadosEReprovados());
