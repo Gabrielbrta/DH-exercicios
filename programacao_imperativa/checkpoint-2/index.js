@@ -61,7 +61,7 @@ const curso = {
         if( media >= porcentagemAprovacao) {
           return `${aluno.nome} Aprovado!`;
         } else {
-          return;
+          return `${aluno.nome} Reprovado`;
         }
     } else {
       return `${aluno.nome} Reprovado`;
